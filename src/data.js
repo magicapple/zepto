@@ -3,7 +3,8 @@
 //     Zepto.js may be freely distributed under the MIT license.
 
 // The following code is heavily inspired by jQuery's $.fn.data()
-
+//下面代码的灵感来源于jquery的$.fn.data()
+//原理就是给node增加一个exp的属性，记录与data中对应的id，用来将node和data关联起来。
 ;(function($) {
   var data = {}, dataAttr = $.fn.data,
     uuid = $.uuid = +new Date(),
